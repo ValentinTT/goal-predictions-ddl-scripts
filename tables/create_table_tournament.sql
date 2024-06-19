@@ -1,0 +1,7 @@
+CREATE TABLE TOURNAMENT (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    id_type INTEGER NOT NULL REFERENCES TOURNAMENT_TYPE(id),
+    start_date DATE,
+    end_date DATE
+);
